@@ -22,3 +22,6 @@ RUN wget -q https://packages.microsoft.com/config/ubuntu/20.04/packages-microsof
     && pwsh --version \
     && apt-get install -y dotnet-runtime-2.1 \
     && dotnet --list-runtimes
+
+RUN mkdir -p ~/.local/share/powershell/Modules
+RUN chmod -R 777 ~/.local/share/powershell/Modules
